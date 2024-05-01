@@ -26,8 +26,8 @@ pipeline {
    stage('Deploy Image') {
       steps{
         sh '''
-        docker tag testapp docker.io/agusras/testapp
-        docker push docker.io/agusras/testapp
+        docker tag testapp agusras/testapp
+        docker push agusras/testapp
         '''
         }
       }
